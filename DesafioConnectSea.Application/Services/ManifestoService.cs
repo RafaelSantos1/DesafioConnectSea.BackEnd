@@ -18,6 +18,7 @@ namespace DesafioConnectSea.Application.Services
         {
             _manifestoRepository = manifestoRepository;
         }
+
         public async Task<List<Manifesto>> GetAllAsync()
         {
            return await _manifestoRepository.GetAllAsync();
