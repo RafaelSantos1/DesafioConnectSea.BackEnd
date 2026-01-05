@@ -15,5 +15,7 @@ namespace DesafioConnectSea.Domain.Entities
         public string PortoOrigem { get; set; }
         public string PortoDestino { get; set; }
 
+        public ManifestoEscala ManifestoEscala { get; set; }
+
     }
 }

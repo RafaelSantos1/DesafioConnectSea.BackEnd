@@ -22,6 +22,11 @@ namespace DesafioConnectSea.Infrastructure.Persistence.Repositories
             return await _context.Escalas.ToListAsync();
         }
 
+        public async Task<Escala> GetByIdAsync(int id)
+        {
+            return await _context.Escalas.SingleOrDefaultAsync(e => e.Id == id);
+        }
+
         public async Task AddAsync(Escala escala)
         {
             await _context.Escalas.AddAsync(escala);

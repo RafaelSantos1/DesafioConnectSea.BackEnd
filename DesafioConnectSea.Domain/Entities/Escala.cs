@@ -9,5 +9,7 @@ namespace DesafioConnectSea.Domain.Entities
         public string Porto { get; set; }
         public StatusEnum Status { get; set; }
         public DateTime Eta { get; set; }
+
+        public ManifestoEscala ManifestoEscala { get; set; }
     }
 }

@@ -4,6 +4,7 @@ using DesafioConnectSea.Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DesafioConnectSea.Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(DesafioConnectSeaDbContext))]
-    partial class DesafioConnectSeaDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260105172326_UpdateManifestoEscala")]
+    partial class UpdateManifestoEscala
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -29,6 +29,9 @@ builder.Services.AddScoped<IEscalaRepository, EscalaRepository>();
 builder.Services.AddScoped<IEscalaService, EscalaService>();
 builder.Services.AddScoped<IManifestoRepository, ManifestoRepository>();
 builder.Services.AddScoped<IManifestoService, ManifestoService>();
+builder.Services.AddScoped<IManifestoEscalaRepository, ManifestoEscalaRepository>();
+builder.Services.AddScoped<IManifestoEscalaService, ManifestoEscalaService>();
+
 
 builder.Services.AddAutoMapper(cfg => { }, typeof(EscalaProfile));
 

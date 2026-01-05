@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace DesafioConnectSea.Domain.Interface.Repositories
 {
-    public interface IEscalaRepository
+    public interface IManifestoEscalaRepository
     {
-        Task<List<Escala>> GetAllAsync();
-        Task AddAsync(Escala escala);
-        Task<Escala> GetByIdAsync(int id);
+        Task<List<ManifestoEscala>> GetAllAsync();
+        Task AddAsync(ManifestoEscala manifesto);
     }
 }

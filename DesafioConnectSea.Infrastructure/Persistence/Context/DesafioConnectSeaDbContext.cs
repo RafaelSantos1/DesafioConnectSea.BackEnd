@@ -19,6 +19,7 @@ namespace DesafioConnectSea.Infrastructure.Persistence.Context
 
         public DbSet<Manifesto> Manifestos { get; set; }
         public DbSet<Escala> Escalas { get; set; }
+        public DbSet<ManifestoEscala> ManifestoEscalas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
