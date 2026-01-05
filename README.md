@@ -25,7 +25,7 @@ dotnet build DesafioConnectSea.sln
 dotnet run --project DesafioConnectSea.API/DesafioConnectSea.API.csproj
 
 ## A API estará disponível em:
-https://localhost:44307
+https://localhost:44348
 
 ## Observações
 Não foi implementado testes unitários.
