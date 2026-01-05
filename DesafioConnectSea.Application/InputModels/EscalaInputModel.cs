@@ -11,7 +11,7 @@ namespace DesafioConnectSea.Application.InputModels
     {
         public string Navio { get; set; }
         public string Porto { get; set; }
-        public EscalaStatusEnum Status { get; set; }
+        public StatusEnum Status { get; set; }
         public DateTime Eta { get; set; }
     }
 }

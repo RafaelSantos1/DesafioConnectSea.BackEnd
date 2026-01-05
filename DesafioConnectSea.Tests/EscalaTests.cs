@@ -41,7 +41,7 @@ namespace DesafioConnectSea.Tests
             var newEscala = new Escala {
                 Navio = "MV Explorer",
                 Porto = "BR RIO DE JANEIRO",
-                Status = EscalaStatusEnum.Atracada,
+                Status = StatusEnum.Atracada,
                 Eta = DateTime.UtcNow.AddDays(3)
             };
 

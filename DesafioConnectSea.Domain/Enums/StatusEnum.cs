@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DesafioConnectSea.Domain.Enums
 {
-    public enum EscalaStatusEnum
+    public enum StatusEnum
     {
         Prevista = 1,
         Cancelada = 2,

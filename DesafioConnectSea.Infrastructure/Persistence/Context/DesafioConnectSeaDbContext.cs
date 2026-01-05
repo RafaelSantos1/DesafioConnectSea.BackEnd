@@ -60,7 +60,7 @@ namespace DesafioConnectSea.Infrastructure.Persistence.Context
                     Id = 201,
                     Navio = "MV Atlas",
                     Porto = "BRRGD - RIO GRANDE",
-                    Status = EscalaStatusEnum.Prevista,
+                    Status = StatusEnum.Prevista,
                     Eta = new DateTime(2025, 8, 27, 5, 0, 0)
                 },
                 new Escala
@@ -68,7 +68,7 @@ namespace DesafioConnectSea.Infrastructure.Persistence.Context
                     Id = 202,
                     Navio = "MV Atlas",
                     Porto = "BRITJ - ITAJAI",
-                    Status = EscalaStatusEnum.Cancelada,
+                    Status = StatusEnum.Cancelada,
                     Eta = new DateTime(2025, 8, 28, 10, 0, 0)
                 },
                 new Escala
@@ -76,7 +76,7 @@ namespace DesafioConnectSea.Infrastructure.Persistence.Context
                     Id = 203,
                     Navio = "MV Atlas",
                     Porto = "BRPNG - PARANAGUA",
-                    Status = EscalaStatusEnum.Prevista,
+                    Status = StatusEnum.Prevista,
                     Eta = new DateTime(2025, 8, 29, 21, 0, 0)
                 },
                 new Escala
@@ -84,7 +84,7 @@ namespace DesafioConnectSea.Infrastructure.Persistence.Context
                     Id = 204,
                     Navio = "MV Atlas",
                     Porto = "BRSSZ - SANTOS",
-                    Status = EscalaStatusEnum.Prevista,
+                    Status = StatusEnum.Prevista,
                     Eta = new DateTime(2025, 8, 31, 8, 0, 0)
                 },
                 new Escala
@@ -92,7 +92,7 @@ namespace DesafioConnectSea.Infrastructure.Persistence.Context
                     Id = 301,
                     Navio = "MV Poseidon",
                     Porto = "BRRGD - RIO GRANDE",
-                    Status = EscalaStatusEnum.Saiu,
+                    Status = StatusEnum.Saiu,
                     Eta = new DateTime(2025, 8, 22, 3, 0, 0)
                 },
                 new Escala
@@ -100,7 +100,7 @@ namespace DesafioConnectSea.Infrastructure.Persistence.Context
                     Id = 302,
                     Navio = "MV Poseidon",
                     Porto = "BRITJ - ITAJAI",
-                    Status = EscalaStatusEnum.Atracada,
+                    Status = StatusEnum.Atracada,
                     Eta = new DateTime(2025, 8, 24, 6, 0, 0)
                 },
                 new Escala
@@ -108,7 +108,7 @@ namespace DesafioConnectSea.Infrastructure.Persistence.Context
                     Id = 303,
                     Navio = "MV Poseidon",
                     Porto = "BRSSZ - SANTOS",
-                    Status = EscalaStatusEnum.Prevista,
+                    Status = StatusEnum.Prevista,
                     Eta = new DateTime(2025, 8, 26, 9, 0, 0)
                 }
             );

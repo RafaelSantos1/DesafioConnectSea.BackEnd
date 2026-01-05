@@ -12,8 +12,19 @@ using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngular",
+        policy =>
+        {
+            policy
+                .WithOrigins("http://localhost:4200")
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+});
 
+// Add services to the container.
 builder.Services.AddScoped<IEscalaRepository, EscalaRepository>();
 builder.Services.AddScoped<IEscalaService, EscalaService>();
 builder.Services.AddScoped<IManifestoRepository, ManifestoRepository>();
@@ -30,6 +41,7 @@ builder.Services.AddDbContext<DesafioConnectSeaDbContext>(
 
 var app = builder.Build();
 
+
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<DesafioConnectSeaDbContext>();
@@ -44,6 +56,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("AllowAngular");
 
 app.UseAuthorization();
 

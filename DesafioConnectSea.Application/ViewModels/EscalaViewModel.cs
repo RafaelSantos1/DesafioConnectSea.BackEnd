@@ -12,7 +12,7 @@ namespace DesafioConnectSea.Application.ViewModels
         public int Id { get; private set; }
         public string Navio { get; private set; }
         public string Porto { get; private set; }
-        public string Status { get; private set; }
+        public StatusEnum Status { get; private set; }
         public DateTime Eta { get; private set; }
     }
 }
