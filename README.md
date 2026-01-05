@@ -1,19 +1,31 @@
-Executar pelo Visual Studio
-Abra o arquivo DesafioConnectSea.sln no Visual Studio.
+# 🚀 Desafio Técnico - Full Stack
 
-Defina DesafioConnectSea.API como projeto de inicialização.
+Sistema de **Manifestos e Escalas** utilizando **.NET Core 9** (backend) e **Angular 20** (frontend).
 
-Clique em Iniciar (F5) para executar a API.
+---
 
-Como Executar pelo VsCode
-1. Build do projeto
+## Autor
+
+**Rafael Lima**
+
+## Executar pelo Visual Studio
+
+1. Abra o arquivo DesafioConnectSea.sln no Visual Studio.
+
+2. Defina DesafioConnectSea.API como projeto de inicialização.
+
+3. Clique em Iniciar (F5) para executar a API.
+
+## Como Executar pelo VsCode 
+
+### 1. Build do projeto
 dotnet build DesafioConnectSea.sln
 
-2. Executar a API
+### 2. Executar a API
 dotnet run --project DesafioConnectSea.API/DesafioConnectSea.API.csproj
 
-A API estará disponível em:
-https://localhost:44348
+## A API estará disponível em:
+https://localhost:44307
 
-Observações
+## Observações
 Não foi implementado testes unitários.
